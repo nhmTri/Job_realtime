@@ -32,10 +32,15 @@ This system collects and processes **real-time job postings** from sources like 
 job_realtime/
 
 ├── jobrealtime/ # Scraper: Scrape & sends data to Redis
+
 ├── kafkastreaming/ # Streaming: Kafka Produce && Consumer → SingleTon Spark writes to Cassandra
+
 ├── common-lib/ # package utils about DTO, API GEMINI
+
 ├── casstomysql/ # Use Change Data Capture
+
 ├── app-runner/ # AppRunner.java - Main pipeline runner
+
 ├── README.md
 
 
@@ -60,22 +65,4 @@ job_realtime/
 ### 4. **OLAP Output Performance**
 - Grafana
 ---
-
-## Cassandra Table Schema
---- sql
-CREATE TABLE IF NOT EXISTS job_posts (
-    job_id VARCHAR(100),
-    title VARCHAR(500),
-    company VARCHAR(300),
-    location VARCHAR(300),
-    salary VARCHAR(200),
-    salaryunit VARCHAR(20),
-    category VARCHAR(200),
-    expired_at DATE,
-    posted_at DATE,
-    skill Text,
-    url TEXT,
-    source VARCHAR(100),
-    scraped_at TIMESTAMP,
-    timeforcdc TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 
