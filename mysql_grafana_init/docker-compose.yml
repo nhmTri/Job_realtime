@@ -1,0 +1,42 @@
+version: '3.8'
+services:
+  mysql:
+    image: mysql:8.3
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: job_scrape_data
+      MYSQL_USER: tri
+      MYSQL_PASSWORD: 123456
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    restart: always
+    networks:
+      - monitoring
+
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    environment:
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: admin
+    volumes:
+      - grafana_data:/var/lib/grafana
+    depends_on:
+      - mysql
+    restart: always
+    networks:
+      - monitoring
+
+volumes:
+  mysql_data:
+  grafana_data:
+
+networks:
+  monitoring:

@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  cassandra:
+    image: cassandra:4.1
+    container_name: cassandra
+    ports:
+      - "9042:9042"
+    environment:
+      CASSANDRA_CLUSTER_NAME: "job-stream-cluster"
+      CASSANDRA_DC: "dc1"
+    volumes:
+      - cassandra_data:/var/lib/cassandra
+    networks:
+      - cassandra-net
+
+  cassandra-init:
+    image: cassandra:4.1
+    depends_on:
+      - cassandra
+    entrypoint: [ "sh", "-c", "sleep 20 && cqlsh cassandra 9042 -f /init.cql" ]
+    volumes:
+      - ./init.cql:/init.cql
+    networks:
+      - cassandra-net
+
+volumes:
+  cassandra_data:
+
+networks:
+  cassandra-net:
