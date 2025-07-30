@@ -30,12 +30,14 @@ This system collects and processes **real-time job postings** from sources like 
 
 ## Project Structure (Multi-Module Maven)
 job_realtime/
-├── jobrealtime/ # Scraper: Scrape & sends data to Redis 
+
+├── jobrealtime/ # Scraper: Scrape & sends data to Redis
 ├── kafkastreaming/ # Streaming: Kafka Produce && Consumer → SingleTon Spark writes to Cassandra
 ├── common-lib/ # package utils about DTO, API GEMINI
 ├── casstomysql/ # Use Change Data Capture
 ├── app-runner/ # AppRunner.java - Main pipeline runner
 ├── README.md
+
 
 ## Pipeline Overview
 
