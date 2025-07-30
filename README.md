@@ -9,13 +9,15 @@ This system collects and processes **real-time job postings** from sources like 
 
 | Component        | Technology                           |
 |------------------|--------------------------------------|
-| Scraper          | Java, Jsoup                          |
+| Scraper          |  Selenium, Playwright                |
+| Cache DB         | Redis                                |
 | Messaging Queue  | Apache Kafka                         |
 | Stream Processing| Apache Spark (local mode)            |
-| Raw Storage      | Apache Cassandra                     |
+| DataLake         | Apache Cassandra                     |
 | OLAP Storage     | MySQL                                |
-| CDC Logic        | Spark + Custom `while true` polling  |
+| CDC Logic        | scrape_at in Cassandra > scraper at MySQL  |
 | Dashboard        | Grafana (Pie Chart by Job Category)  |
+|Utils             | Docker,   |
 
 ---
 
