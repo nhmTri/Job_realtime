@@ -49,7 +49,7 @@ job_realtime/
 ### 1. **Job Scraping**
 
 - Crawls job listings from VietnamWorks and CareerViet (title, company, skills, etc.)
-- Sends structured data to Kafka topics (`vietnamworks-topic`, `careerviet-topic`)
+- Sends structured data to Kafka topics
 
 ### 2. **Streaming Processing && Batch Processing**
 
