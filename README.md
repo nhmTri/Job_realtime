@@ -6,6 +6,7 @@
 ![MySQL](https://img.shields.io/badge/MySQL-serving-1F7A5A?style=flat-square&logo=mysql&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-one%20command-2456D6?style=flat-square&logo=docker&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-per%20source-C2703A?style=flat-square&logo=grafana&logoColor=white)
+[![build](https://github.com/nhmTri/Job_realtime/actions/workflows/build.yml/badge.svg)](https://github.com/nhmTri/Job_realtime/actions/workflows/build.yml)
 
 <img src="assets/architecture.svg" alt="Streaming architecture: two job boards through Kafka and Spark to Cassandra, MySQL and Grafana" width="100%">
 
@@ -46,11 +47,12 @@ A production-shaped streaming pipeline that picks up job postings from **two Vie
 ```bash
 git clone https://github.com/nhmTri/Job_realtime.git
 cd Job_realtime
-cp .env.example .env          # set your Gemini key and DB passwords
-docker compose up -d          # Kafka, Cassandra, MySQL, Redis, Grafana
-mvn clean package
-java -jar apprunner/target/apprunner.jar
+cp .env.example .env     # set your Gemini key and DB passwords
+make up                  # Kafka, Cassandra, MySQL, Redis, Grafana
+make run                 # compile every module and start the pipeline
 ```
+
+`make` targets: `up` `down` `build` `run` `logs` `clean`. A root aggregator POM builds all six modules in dependency order.
 
 Grafana: http://localhost:3000 · MySQL: `localhost:3306` · Cassandra: `localhost:9042`
 
