@@ -1,0 +1,30 @@
+# build
+target/
+*.class
+*.jar
+!**/lib/*.jar
+
+# spark / streaming state
+checkpoint/
+spark-warehouse/
+metastore_db/
+derby.log
+
+# data
+data/
+*.csv
+*.parquet
+*.log
+
+# secrets
+.env
+*.pem
+credentials*.json
+service-account*.json
+
+# ide & os
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
