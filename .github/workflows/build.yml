@@ -1,0 +1,35 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  stack:
+    name: stack definition
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: docker-compose must be valid
+        run: docker compose -f docker-compose.yml --env-file .env.example config --quiet
+      - name: required files must exist
+        run: |
+          for f in README.md docker-compose.yml .env.example .gitignore pom.xml; do
+            test -f "$f" || { echo "missing $f"; exit 1; }
+          done
+          echo "✓ stack definition and repo layout are complete"
+
+  compile:
+    name: maven compile
+    runs-on: ubuntu-latest
+    continue-on-error: true   # Spark/Cassandra deps are heavy; a miss here must not block the stack check
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: maven
+      - run: mvn -B -q -DskipTests compile
