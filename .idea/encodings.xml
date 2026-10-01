@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$USER_HOME$/Desktop/src/main/java" charset="UTF-8" />
+    <file url="file://$USER_HOME$/Desktop/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apprunner/olap_output/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apprunner/olap_output/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apprunner/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apprunner/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/casstomysql/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/casstomysql/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common-lib/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common-lib/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common-lib/untitled/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common-lib/untitled/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kafkastreaming/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kafkastreaming/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scraper/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scraper/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
