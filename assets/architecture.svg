@@ -1,60 +1,132 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 270" width="1000" height="270" role="img" aria-label="Streaming architecture from two job boards through Kafka and Spark to Cassandra, MySQL and Grafana.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320" width="1000" height="320" role="img" aria-label="Two job boards are scraped into Kafka, parsed by Spark Streaming, written to Cassandra as the immutable raw layer and to MySQL for serving, with Grafana watching each source separately." xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpiMTUzZWJlOS01NmM4LTQ3MDgtYWZkOS0zZmU0MmVmNjM3MmMAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaL9fpTt35ZfB7xrxJdveoQoAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDphNjVjZGY4Mi1jMDQ2LTQzYjAtOWE3NS0zZjM5Y2ZjOTUzYmZscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNo++iPsuxYczowACsQ3Tz9oQAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFgg4OYyXZx8/U4H1MLJPEdNeFc3g9PSuGBbT2Vwq7RKapKkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaP8S8cJOdPvnfmrQNjQOeV0AAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIBYFQoW7DtlO4mxiZ1T1vOmegvPl803OpY4+qBR+AyRpZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GQFqZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmIxNTNlYmU5LTU2YzgtNDcwOC1hZmQ5LTNmZTQyZWY2MzcyYy9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjA2NjM2MWUxLTY1MTAtNDExYi05OTY5LWIzYzc3MmQ2NzFjNHJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCDg5jJdnHz9TgfUwsk8R014VzeD09K4YFtPZXCrtEpqkqJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFgg5xNz5zcI3yD2jSmyO37Xbe3+8j6gH7p8fowhdOyWkJyiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggRkwLPHuL1jmpmd5dq81oqstJJi87KopdAVLRUJb7Gzh0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQIBk5hscld46UsFpE8sZmOW2tTyCDuLpv4FL/U1Dh/LyZJxEioWci0XaF+tCTlvEF9YyCWOISjNF762/i/EDAn8=</c2pa:manifest></metadata>
   <style>
-    .t{font:600 12px ui-monospace,Menlo,monospace;fill:#3C4354;letter-spacing:.05em}
-    .s{font:400 9.5px ui-monospace,Menlo,monospace;fill:#8892A6}
-    .k{font:500 10px ui-monospace,Menlo,monospace;fill:#8892A6;letter-spacing:.16em}
-    .b{fill:#2456D6;fill-opacity:.05;stroke:#2456D6;stroke-opacity:.4;stroke-width:1.4}
-    .braw{fill:#C2703A;fill-opacity:.07;stroke:#C2703A;stroke-opacity:.5;stroke-width:1.4}
-    .bser{fill:#1F7A5A;fill-opacity:.07;stroke:#1F7A5A;stroke-opacity:.5;stroke-width:1.4}
-    .w{stroke:#8892A6;stroke-opacity:.5;stroke-width:1.3;fill:none}
-    .p{fill:#2456D6}
-    .warn{stroke:#C0392B;stroke-width:1.3;stroke-dasharray:4 4;fill:none;opacity:.8}
-    .wt{font:600 10px ui-monospace,Menlo,monospace;fill:#C0392B}
+    :root{color-scheme:light dark}
+    .ttl{font:700 13px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#2456D6;letter-spacing:.14em}
+    .nm{font:700 12px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#1B2030}
+    .sub{font:400 10px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#8892A6}
+    .tag{font:600 9px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#8892A6;letter-spacing:.18em}
+    .num{font:700 15px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#1F7A5A}
+    .box{fill:#FFFFFF;stroke:#D6DBE6;stroke-width:1.5;rx:8}
+    .wire{fill:none;stroke:#C3CAD8;stroke-width:1.6}
+    .flow{fill:none;stroke:#2456D6;stroke-width:2;stroke-linecap:round;
+          stroke-dasharray:7 13;animation:dash 1.1s linear infinite}
+    .flow.slow{animation-duration:1.7s;stroke:#C2703A}
+    .flow.green{animation-duration:1.4s;stroke:#1F7A5A}
+    @keyframes dash{to{stroke-dashoffset:-20}}
+
+    .pulse{animation:pulse 2.6s ease-in-out infinite}
+    .pulse.d1{animation-delay:.5s} .pulse.d2{animation-delay:1s} .pulse.d3{animation-delay:1.5s}
+    @keyframes pulse{0%,100%{opacity:.25}45%{opacity:1}}
+
+    .par{fill:#2456D6;opacity:.18}
+    .fill{fill:#2456D6;transform-box:fill-box;transform-origin:bottom;animation:fill 2.8s cubic-bezier(.4,0,.2,1) infinite}
+    .fill.b{animation-delay:.35s} .fill.c{animation-delay:.7s}
+    @keyframes fill{0%{transform:scaleY(.05)}55%{transform:scaleY(1)}100%{transform:scaleY(.05)}}
+
+    .spark{transform-origin:center;animation:spin 7s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+
+    .bar{transform-box:fill-box;transform-origin:bottom;animation:bar 3.2s ease-in-out infinite}
+    .bar:nth-of-type(2){animation-delay:.25s}
+    .bar:nth-of-type(3){animation-delay:.5s}
+    .bar:nth-of-type(4){animation-delay:.75s}
+    .bar:nth-of-type(5){animation-delay:1s}
+    @keyframes bar{0%,100%{transform:scaleY(.35)}50%{transform:scaleY(1)}}
+
+    .beat{animation:beat 2.2s ease-in-out infinite}
+    @keyframes beat{0%,100%{r:3.5;opacity:1}50%{r:5.5;opacity:.45}}
+
+    @media (prefers-reduced-motion:reduce){
+      .flow,.pulse,.fill,.spark,.bar,.beat{animation:none}
+      .fill{transform:scaleY(.8)}
+    }
+    @media (prefers-color-scheme:dark){
+      .box{fill:#161B24;stroke:#2B3443}
+      .nm{fill:#E8ECF4}
+      .sub,.tag{fill:#7F8AA0}
+      .wire{stroke:#394354}
+    }
   </style>
-  <text class="k" x="28" y="24">BUFFER &#183; REPLAY &#183; SERVE &#183; MONITOR</text>
 
-  <g transform="translate(28,40)">
-    <rect class="b" x="0" y="0" width="112" height="34" rx="8"/>
-    <text class="t" x="56" y="21" text-anchor="middle">VietnamWorks</text>
-    <rect class="b" x="0" y="46" width="112" height="34" rx="8"/>
-    <text class="t" x="56" y="67" text-anchor="middle">CareerViet</text>
+  <!-- = sources -->
+  <text class="tag" x="36" y="40">SOURCES</text>
+  <rect class="box" x="30" y="56" width="132" height="44"/>
+  <circle class="beat" cx="48" cy="78" r="3.5" fill="#1F7A5A"/>
+  <text class="nm"  x="62" y="76">VietnamWorks</text>
+  <text class="sub" x="62" y="90">every 15 min</text>
 
-    <rect class="b" x="152" y="14" width="104" height="52" rx="9"/>
-    <text class="t" x="204" y="36" text-anchor="middle">SCRAPER</text>
-    <text class="s" x="204" y="52" text-anchor="middle">Selenium &#183; Redis</text>
+  <rect class="box" x="30" y="150" width="132" height="44"/>
+  <circle class="beat" cx="48" cy="172" r="3.5" fill="#1F7A5A" style="animation-delay:1.1s"/>
+  <text class="nm"  x="62" y="170">CareerViet</text>
+  <text class="sub" x="62" y="184">every 15 min</text>
 
-    <rect class="b" x="276" y="14" width="96" height="52" rx="9"/>
-    <text class="t" x="324" y="36" text-anchor="middle">KAFKA</text>
-    <text class="s" x="324" y="52" text-anchor="middle">buffer</text>
+  <path class="wire" d="M162 78 H198 Q210 78 210 90 V118"/>
+  <path class="wire" d="M162 172 H198 Q210 172 210 160 V134"/>
+  <path class="flow" d="M162 78 H198 Q210 78 210 90 V118"/>
+  <path class="flow slow" d="M162 172 H198 Q210 172 210 160 V134"/>
 
-    <rect class="b" x="392" y="14" width="124" height="52" rx="9"/>
-    <text class="t" x="454" y="36" text-anchor="middle">SPARK STREAM</text>
-    <text class="s" x="454" y="52" text-anchor="middle">parse &#183; dedupe</text>
+  <!-- = scraper -->
+  <rect class="box" x="166" y="118" width="88" height="48"/>
+  <text class="nm"  x="180" y="140">SCRAPER</text>
+  <text class="sub" x="180" y="154">Selenium</text>
+  <path class="wire" d="M254 142 H300"/>
+  <path class="flow" d="M254 142 H300"/>
 
-    <rect class="braw" x="536" y="14" width="112" height="52" rx="9"/>
-    <text class="t" x="592" y="36" text-anchor="middle">CASSANDRA</text>
-    <text class="s" x="592" y="52" text-anchor="middle">immutable raw</text>
-
-    <rect class="bser" x="668" y="14" width="104" height="52" rx="9"/>
-    <text class="t" x="720" y="36" text-anchor="middle">MySQL</text>
-    <text class="s" x="720" y="52" text-anchor="middle">serving &#183; CDC</text>
-
-    <rect class="bser" x="792" y="14" width="110" height="52" rx="9"/>
-    <text class="t" x="847" y="36" text-anchor="middle">GRAFANA</text>
-    <text class="s" x="847" y="52" text-anchor="middle">per source</text>
-
-    <path class="w" d="M112 17 C130 17 134 40 152 40 M112 63 C130 63 134 40 152 40 M256 40 H276 M372 40 H392 M516 40 H536 M648 40 H668 M772 40 H792"/>
-    <circle class="p" r="3.4"><animateMotion dur="4.4s" repeatCount="indefinite" path="M112 17 C130 17 134 40 152 40 M256 40 H276 M372 40 H392 M516 40 H536 M648 40 H668 M772 40 H792"/></circle>
-    <circle class="p" r="3.4" opacity=".6"><animateMotion dur="4.4s" begin="-2.2s" repeatCount="indefinite" path="M112 63 C130 63 134 40 152 40 M256 40 H276 M372 40 H392 M516 40 H536 M648 40 H668 M772 40 H792"/></circle>
-
-    <path class="w" d="M592 66 V108 H454 V66" stroke-dasharray="3 4"/>
-    <text class="s" x="524" y="122" text-anchor="middle">every downstream table rebuildable by replay</text>
+  <!-- = kafka -->
+  <text class="tag" x="304" y="96">KAFKA · BUFFER</text>
+  <rect class="box" x="300" y="106" width="118" height="72"/>
+  <g>
+    <rect class="par" x="316" y="122" width="22" height="42" rx="2"/>
+    <rect class="par" x="348" y="122" width="22" height="42" rx="2"/>
+    <rect class="par" x="380" y="122" width="22" height="42" rx="2"/>
+    <rect class="fill"   x="316" y="122" width="22" height="42" rx="2"/>
+    <rect class="fill b" x="348" y="122" width="22" height="42" rx="2"/>
+    <rect class="fill c" x="380" y="122" width="22" height="42" rx="2"/>
   </g>
+  <text class="sub" x="300" y="194">3 partitions · replayable</text>
+  <path class="wire" d="M418 142 H466"/>
+  <path class="flow" d="M418 142 H466"/>
 
-  <g transform="translate(28,190)">
-    <path class="warn" d="M0 10 H960"/>
-    <rect x="0" y="0" width="2" height="0" fill="none"/>
-    <text class="wt" x="0" y="34">A silent source looks exactly like a market with no new jobs.</text>
-    <text class="s" x="0" y="52">Totals hide it. Only per-source monitoring tells them apart &#8212; so Grafana watches each source separately.</text>
-  </g>
+  <!-- = spark -->
+  <rect class="box" x="466" y="106" width="118" height="72"/>
+  <circle class="spark" cx="496" cy="132" r="11" fill="none" stroke="#C2703A" stroke-width="2" stroke-dasharray="14 9" style="transform-box:fill-box"/>
+  <text class="nm"  x="514" y="130">SPARK</text>
+  <text class="sub" x="482" y="152">parse · dedupe</text>
+  <text class="sub" x="482" y="166">micro-batch 30s</text>
+
+  <path class="wire" d="M584 130 H640 Q652 130 652 118 V86"/>
+  <path class="wire" d="M584 154 H640 Q652 154 652 166 V198"/>
+  <path class="flow green" d="M584 130 H640 Q652 130 652 118 V86"/>
+  <path class="flow slow"  d="M584 154 H640 Q652 154 652 166 V198"/>
+
+  <!-- = two stores -->
+  <rect class="box" x="608" y="36" width="150" height="50"/>
+  <text class="nm"  x="624" y="58">CASSANDRA</text>
+  <text class="sub" x="624" y="72">immutable raw · append only</text>
+
+  <rect class="box" x="608" y="198" width="150" height="50"/>
+  <text class="nm"  x="624" y="220">MySQL</text>
+  <text class="sub" x="624" y="234">serving · CDC</text>
+
+  <!-- replay arc: raw can rebuild serving -->
+  <path class="wire" d="M758 61 Q830 61 830 142 Q830 223 758 223" stroke-dasharray="3 5"/>
+  <text class="tag" x="786" y="138" fill="#C2703A">REPLAY</text>
+  <text class="tag" x="786" y="150" fill="#C2703A">REBUILDS</text>
+
+  <!-- = grafana -->
+  <text class="tag" x="866" y="96">GRAFANA</text>
+  <rect class="box" x="862" y="106" width="108" height="72"/>
+  <rect class="bar" x="876" y="128" width="12" height="38" rx="2" fill="#2456D6"/>
+  <rect class="bar" x="894" y="128" width="12" height="38" rx="2" fill="#2456D6"/>
+  <rect class="bar" x="912" y="128" width="12" height="38" rx="2" fill="#C2703A"/>
+  <rect class="bar" x="930" y="128" width="12" height="38" rx="2" fill="#2456D6"/>
+  <rect class="bar" x="948" y="128" width="12" height="38" rx="2" fill="#2456D6"/>
+  <text class="sub" x="862" y="194">one chart per source</text>
+  <path class="wire" d="M758 223 H820 Q840 223 840 200 V142 H862" stroke-dasharray="3 5"/>
+
+  <!-- = note -->
+  <text class="ttl" x="30" y="282">A SILENT SOURCE LOOKS EXACTLY LIKE A QUIET MARKET</text>
+  <text class="sub" x="30" y="300">Totals hide it. Per-source charts do not — that is the whole reason the Grafana panel is split.</text>
+  <text class="num" x="970" y="278" text-anchor="end">minutes, not nightly</text>
+  <text class="sub" x="970" y="300" text-anchor="end">every table rebuildable by replay</text>
 </svg>
